@@ -1,7 +1,205 @@
 * {
   padding: 0;
   margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Josefin Sans";
+}
+
+.header-nav {
+  height: 100vh;
+  background: #2a3b40 url(/img/hero.png) center/cover no-repeat;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  text-align: center;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-nav .header-heading {
+  color: #d4d8d9;
+  text-decoration: none;
+  position: absolute;
+  top: 10%;
+  left: 23%;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.header-nav .header-links {
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: absolute;
+  top: 11%;
+  right: 10%;
+  text-transform: uppercase;
+}
+
+.header-nav .header-links ul {
+  margin-left: 10rem;
+}
+
+.header-nav .header-links li {
+  display: inline;
+  margin: 0 3rem;
+}
+
+.header-nav .header-box {
+  position: absolute;
+  top: 40%;
+  left: 22%;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 8rem 5rem;
+}
+
+.header-nav .header-box h1 {
+  text-transform: capitalize;
+  color: #2c3a42;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  font-family: "Lily Script One";
+}
+
+.header-nav .header-box h2 {
+  text-transform: uppercase;
+  color: #ad6c12;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-top: 4rem;
+  margin: auto;
+  margin-bottom: 4rem;
+  width: 70%;
+}
+
+.header-nav .header-box a {
+  background: white;
+  color: #2a3b40;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  color: white;
+  background: #2a3b40;
+}
+
+.section1 .sec1-text {
+  padding: 10%;
+  margin: 5rem 0;
+}
+
+.section1 .sec1-text h2 {
+  margin-bottom: 2rem;
+  line-height: 5rem;
+}
+
+.section1 .sec1-text p {
+  margin-bottom: 2rem;
+  line-height: 4.5rem;
+  font-weight: 500;
+}
+
+.section1 img {
+  margin: auto;
+}
+
+.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d4d8d9;
+}
+
+.section2 .new-tastes {
+  padding: 10rem;
+}
+
+.section2 .new-tastes img {
+  margin-bottom: 5rem;
+}
+
+.section2 .new-tastes h1 {
+  margin-bottom: 5rem;
+}
+
+.section2 .new-tastes p {
+  line-height: 1.8;
+}
+
+.sec3 {
+  background: url(/img/foods-bg.png) center/cover no-repeat;
+  padding: 2rem;
+  margin: 0;
+}
+
+.sec3 .food-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  margin: 20rem 20rem;
+  text-align: center;
+}
+
+.sec3 .food-container img {
+  width: 100%;
+}
+
+.sec3 .food-content {
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.sec3 .food-content p {
+  margin: 2rem;
+}
+
+.sec3 .heading {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.sec3 .heading h1 {
+  color: #2c3a42;
+  text-transform: uppercase;
+}
+
+.sec3 .heading h2 {
+  color: #ad6c12;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
