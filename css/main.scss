@@ -165,6 +165,7 @@ body {
             h1{
                 color: $h1-text-color;
                 text-transform: uppercase;
+                font-family: $h1-font-family;
             }
             h2 {
                 color: $h2-text-color;
@@ -173,3 +174,133 @@ body {
             }
     }
 }
+
+// Section 4 //
+
+.section-4 {
+    background: rgba($color: $box-bg-color, $alpha: 1);
+    position: relative;
+    text-align: center;
+    &::before {
+        content: url(/img/section-4-left.png);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &::after {
+        content: url(/img/section-4-right.png);
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .content {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+        & h1 {
+            margin: 1rem 0;
+            text-transform: capitalize;
+            color: $h1-text-color;
+
+        }
+        & p {
+            margin: 1rem 0 ;
+            width: 50%;
+            display: inline-block;
+            line-height: 1.7;
+            font-weight: 500;
+        }
+        & img {
+            display: block;
+            margin: 3rem auto 4rem;
+        }
+        & li {
+            display: inline;
+            margin: 1rem 2rem;
+            
+        }
+        & a {
+            text-decoration: none;
+            color: $background-color;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+    
+
+}
+
+// Section-5 //
+.section-5 {
+    background: url(/img/sec-5-bg.png) center/cover no-repeat;
+    padding-top: 25rem;
+    & .our-menu {
+        background: rgba($color: $box-bg-color, $alpha: .5);
+        text-align: center;
+    }
+    & .new-menu {
+        margin: 0 15rem;
+        padding-bottom: 6rem;
+    }
+    & h1 {
+        color: $h1-text-color;
+        font-family: $h1-font-family;
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+        text-transform: capitalize;
+    }
+    & h2 {
+        color: $h2-text-color;
+        text-transform: uppercase;
+        margin-bottom: 5rem;;
+    }
+    & h3 {
+        color: $h1-text-color;
+    }
+    & p {
+        color: $h1-text-color;
+    }
+    .new-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .new-menu-food {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .food-vector {
+        // background-color: white;
+        .foodimg {
+            background-color: white;
+            padding: 2rem;
+            grid-area: 1/2;
+            border-radius: 50%;
+            ;
+        }
+    }
+    .food-heading {
+        grid-column: 2/4;
+    }
+    .food-p {
+        grid-column: 2/4;
+    }
+    .new-menu-food h3 {
+        display:inline-block;
+        margin-top: 1rem;
+    }
+    .new-menu-food {
+        margin-bottom: 4rem;
+        text-align: start;
+    }
+}
+
+// Section-6 // 
+
+.section6 {
+    background: url(/img/sec-6-bg.png) center/cover no-repeat;
+    height: 100vh
+}
+
+// section-7 //
+
+
