@@ -359,7 +359,7 @@ body {
         margin-bottom: 4rem;;
     }
     .menu-container {
-        display: flex;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
     .square {
@@ -434,10 +434,11 @@ body {
         .header-box {
             top: 25%;
             left: 10%;
-            padding: 5rem;
+            padding: 2rem;
 
             & h2 {
                 font-size: 2.5rem;
+                width: 70vw;
             }
             & h1 {
                 // margin-bottom: 10rem;
@@ -448,6 +449,12 @@ body {
         grid-template-columns: 1fr;
         & img {
             width: 90vw;
+            margin: 3rem auto;
+        }
+        & .sec1-text {
+            margin: 0;
+            padding: 2rem;
+            text-align: center;
         }
     }
 
@@ -465,6 +472,9 @@ body {
             margin: 0;
             display: flex;
             flex-direction: column;
+            & img {
+                width: 60%;
+            }
         }
         & h1 {
             padding-top: 5rem ;
@@ -497,6 +507,62 @@ body {
             display: block;
             margin-bottom: 4rem;
         }
+        }
+    }
+    .section-5 {
+        .our-menu {
+            .new-menu {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+            }
+        }
+        .new-menu-food {
+            display: block;
+            text-align: center;
+            .foodimg {
+                margin-bottom: 3rem;
+            }
+            & h3 {
+                margin-bottom: 2rem;
+            }
+            & p {
+                padding: 2rem;
+            }
+        }
+    }
+    .section6 {
+        .forms {
+            display: block;
+            text-align: center;
+        }
+        select {
+            margin: 2rem auto;
+        }
+        input {
+            margin: 2rem auto;
+        }
+    }
+    .section7 {
+        padding: 4rem 0;
+        margin: 0;
+        & h1 {
+            margin: 0;
+        }
+        .menu-container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+    .section8 {
+        .social-icons {
+            display: flex;
+            margin: auto;
+            padding: 0;
+            margin: 0;
+        }
+        & img {
+            margin: 2rem;
         }
     }
 }
