@@ -1,0 +1,42 @@
+<div class="menu-icon" id="menu-icon">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+
+#menu-icon {
+    position: absolute;
+    top: 5rem;
+    right: 6rem;            
+    & span {
+        width: 5rem;
+        right: 2rem;
+        background: white;
+        position: absolute;
+        height: 1rem;
+        display: block;
+        border: 2px solid black;
+        &:nth-child(1) {
+            top: 0;
+        }
+        &:nth-child(2) {
+            top: 13px;
+        }
+        &:nth-child(3) {
+            top: 26px;
+        }
+    }
+    &.open span:nth-child(1) {
+        transform: rotate(135deg);
+        top: 13px;
+    }
+    &.open span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+    }
+    &.open span:nth-child(3) {
+        top: 13px;
+        transform: rotate(-135deg);
+    }
+}
