@@ -9,6 +9,7 @@ $h1-font-family:'Lily Script One', ;
 }
 html {
     font-size: 62.5%;
+    
 
 }
 body {
@@ -18,79 +19,88 @@ body {
     font-family: 'Josefin Sans', ;
 }
     ///// header/////
-.header-nav {
+.header {
     height: 100vh;
-    background: $background-color url(/img/hero.png) center/cover no-repeat;
     position: relative;
+    background: $background-color url(/img/hero.png) center/cover no-repeat;
+
+    .header-nav {
     display: grid;
     grid-template-columns: 1fr 2fr;
     text-align: center;
-    
+    transform: translateY(90%);
+    height: 6rem;
+    top: 2rem;
     & a {
         color: white;
         text-decoration: none;
+        font-weight: 300;
     }
         .header-heading {
             color: $box-bg-color;
             text-decoration: none;
-        position: absolute;
-        top: 10%;
-        left: 23%;
         font-size: 3rem;
+        font-weight: 700;
         text-transform: uppercase;
         }
         .header-links {
             font-size: 2.5rem;
             font-weight: 600;
-            position: absolute;
             top: 11%;
             right:10%;
             text-transform: uppercase;
         }
         .header-links ul {
-            margin-left: 10rem;
+            // margin-left: 10rem;
         }
         .header-links li {
             display: inline;
             margin: 0 3rem;
         }
-        
-        .header-box {
-            position: absolute;
-            top: 40%;
-            left: 22%;
-            background: rgba($color: white, $alpha: .5);
-            padding: 8rem 5rem;
-            & h1 {
-                text-transform: capitalize;
-                color: $h1-text-color;
-                font-size: 5rem;
-                margin-bottom: 2rem;
-                font-family:$h1-font-family;
-            }
-            & h2 {
-                text-transform: uppercase;
-                color: $h2-text-color;
-                font-size: 4rem;
-                font-weight: 500;
-                margin-top: 4rem;
-                margin:auto;
-                margin-bottom: 4rem;
-                width: 70%;
-            }
-            & a {
-                background: white;
-                color: $background-color;
-                padding: 1rem 2rem;
-                text-transform: uppercase;
-                font-weight: 700;
-            }
-            }
     }
-
+    .header-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: auto;
+        background: rgba($color: white, $alpha: .5);
+        padding: 8rem 5rem;
+        text-align: center;
+        & h1 {
+            text-transform: capitalize;
+            color: $h1-text-color;
+            font-size: 7rem;
+            font-weight: 500;
+            margin-bottom: 5rem;
+            font-family:$h1-font-family;
+        }
+        & h2 {
+            text-transform: uppercase;
+            color: $h2-text-color;
+            font-size: 3rem;
+            font-weight: 600;
+            margin-top: 4rem;
+            margin:auto;
+            margin-bottom: 5rem;
+            width: 70%;
+        }
+        & a {
+            background: white;
+            color: $background-color;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        }
+}
     // sec-1 ////
-.section1 {
+    .section1-wrapper {
+        background-color: $background-color;
+    .section1 {
     display: grid;
+    max-width: 120rem;
+    margin: auto;
     grid-template-columns: 1fr 1fr;
     justify-self: center;
     align-items: center;
@@ -113,11 +123,17 @@ body {
     }
     & img {
         margin: auto;
+        width: 80%;
     }
 }
+}
 // Section-2 //
+.section2-wrapper { 
+    background-color: $box-bg-color;
 .section2 {
     display: flex;
+    max-width: 120rem;
+    margin: auto;
     background-color: $box-bg-color;
     ;
     .new-tastes {
@@ -133,6 +149,7 @@ body {
         }
         }
     }
+}
 // Section-3//
 .sec3 {
     background: url(/img/foods-bg.png) center/cover no-repeat;
@@ -141,9 +158,10 @@ body {
     .food-container {
         background-color: rgba($color: white, $alpha: .7);
         display: grid;
+        margin: auto;
+        max-width: 120rem;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(4,1fr);
-        margin: 20rem 20rem;
         text-align: center;
         & img{
         width: 100%;
@@ -176,11 +194,9 @@ body {
 }
 
 // Section 4 //
-
-.section-4 {
-    background: rgba($color: $box-bg-color, $alpha: 1);
+.section4-wrapper {
+    background-color: $box-bg-color;
     position: relative;
-    text-align: center;
     &::before {
         content: url(/img/section-4-left.png);
         position: absolute;
@@ -193,17 +209,23 @@ body {
         right: 0;
         top: 0;
     }
+.section-4 {
+    background: rgba($color: $box-bg-color, $alpha: 1);
+    position: relative;
+    text-align: center;
+    max-width: 120rem;
+    margin: auto;
     .content {
-        padding-top: 10rem;
+        padding-top: 5rem;
         padding-bottom: 5rem;
         & h1 {
-            margin: 1rem 0;
+            margin: 0.7rem 0;
             text-transform: capitalize;
             color: $h1-text-color;
 
         }
         & p {
-            margin: 1rem 0 ;
+            margin: 0.7rem 0 ;
             width: 50%;
             display: inline-block;
             line-height: 1.7;
@@ -211,11 +233,11 @@ body {
         }
         & img {
             display: block;
-            margin: 3rem auto 4rem;
+            margin: 2rem auto 3rem;
         }
         & li {
             display: inline;
-            margin: 1rem 2rem;
+            margin: 0.7rem 2rem;
             
         }
         & a {
@@ -225,16 +247,18 @@ body {
             text-transform: capitalize;
         }
     }
-    
-
+    }
 }
-
 // Section-5 //
-.section-5 {
+.section5-wrapper {
     background: url(/img/sec-5-bg.png) center/cover no-repeat;
-    padding-top: 25rem;
+.section-5 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin: auto;
+    max-width: 120rem;
     & .our-menu {
-        background: rgba($color: $box-bg-color, $alpha: .5);
+        background: rgba($color: $box-bg-color, $alpha: .8);
         text-align: center;
     }
     & .new-menu {
@@ -266,7 +290,6 @@ body {
     .new-menu-food {
         display: grid;
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: 1fr 1fr;
     }
     .food-vector {
         // background-color: white;
@@ -293,13 +316,16 @@ body {
         text-align: start;
     }
 }
-
+}
 // Section-6 // 
-
+.section6-wrapper {
+    background: $background-color;
 .section6 {
     background: $background-color;
     color: $box-bg-color;
     padding-bottom: 5rem;
+    max-width: 120rem;
+    margin: auto;
     & h1 {
         font-family: $h1-font-family;
         padding-top: 4rem;
@@ -342,15 +368,19 @@ body {
     text-align: center;
     }
 }
+}
 
 // section-7 //
+.section7-wrapper {
+    background-color: $box-bg-color;
 .section7 {
     text-align: center;
     background: rgba($color: $box-bg-color, $alpha: .5);
-    padding: 8rem;
+    margin: auto;
+    max-width: 120rem;
     & h1 {
         color: $h1-text-color;
-        margin-top: 4rem;
+        padding: 2rem;
         font-family: $h1-font-family;
         font-weight: 500;
     }
@@ -361,11 +391,12 @@ body {
     .menu-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        padding-bottom: 5rem;
     }
     .square {
         text-align: left;
         background: white;
-        margin: 2rem 10rem ;
+        margin: 2rem;
         & img {
             width: 100%;
         }
@@ -392,6 +423,7 @@ body {
             }
         }
     }
+}
 }
 
 // Section 8 //
@@ -422,15 +454,51 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+    .header{
     .header-nav {
-        .header-heading {
+        position: relative;
+        & .header-heading {
         top: 7%;
         left: 10%;
         height: 100vh;
+        
         }
-        .header-links {
+        & .header-links {
             display: none;
         }
+        .container {
+            position: absolute;
+            right: -41rem;
+            top: -1.3rem;
+            cursor: pointer;
+            & {
+                .bar1, .bar2, .bar3 {
+                    width: 35px;
+                    height: 5px;
+                    background-color: $box-bg-color;
+                    margin: 6px 0;
+                    transition: 0.4s;
+                    }
+                }
+                &.change {
+                    position: absolute;
+                    right: -41rem;
+                    top: -1.3rem;
+                    cursor: pointer;
+                }
+                &.change .bar1 {
+                    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+                    transform: rotate(-45deg) translate(-9px, 6px) ;
+                }
+                &.change .bar2 {
+                    opacity: 0;
+                }
+                &.change .bar3 {
+                    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+                    transform: rotate(45deg) translate(-8px, -8px) ;
+                }
+            }
+        
         .header-box {
             top: 25%;
             left: 10%;
@@ -440,15 +508,14 @@ body {
                 font-size: 2.5rem;
                 width: 70vw;
             }
-            & h1 {
-                // margin-bottom: 10rem;
-            }
         }
 }
+}
+    .section1-wrapper{
     .section1 {
         grid-template-columns: 1fr;
         & img {
-            width: 90vw;
+            // width: 70%;
             margin: 3rem auto;
         }
         & .sec1-text {
@@ -457,7 +524,9 @@ body {
             text-align: center;
         }
     }
+}
 
+    .section2-wrapper {
     .section2 {
         flex-direction: column;
         .new-tastes {
@@ -465,6 +534,7 @@ body {
             text-align: center;
         }
     }
+}
 
     .sec3 {
 
@@ -482,11 +552,9 @@ body {
         & h2 {
             padding-bottom: 4rem;
         }
-        .food-content {
 
-        }
     }
-    .section-4 {
+    .section4-wrapper {
         
         &::before {
             display: none;
@@ -509,12 +577,20 @@ body {
         }
         }
     }
-    .section-5 {
+    .section5-wrapper {
         .our-menu {
+            display: grid;
+            grid-template-columns: 1fr;
             .new-menu {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                align-content: center;
+                justify-content: center;
+                grid-template-columns: 1fr;
                 margin: 0;
+                padding: 3rem;
+                & .food-heading {
+                    text-align: center;
+                }
             }
         }
         .new-menu-food {
@@ -531,9 +607,10 @@ body {
             }
         }
     }
-    .section6 {
+    .section6-wrapper {
+        .section6 { 
         .forms {
-            display: block;
+            grid-template-columns: 1fr;
             text-align: center;
         }
         select {
@@ -543,17 +620,27 @@ body {
             margin: 2rem auto;
         }
     }
-    .section7 {
+}
+    .section7-wrapper{
+        .section7 {
         padding: 4rem 0;
         margin: 0;
         & h1 {
             margin: 0;
+        }
+        .square {
+            margin: 5rem;
+            text-align: center;
+            a{
+                font-size: 2rem;
+            }
         }
         .menu-container {
             display: grid;
             grid-template-columns: 1fr;
         }
     }
+}
     .section8 {
         .social-icons {
             display: flex;
