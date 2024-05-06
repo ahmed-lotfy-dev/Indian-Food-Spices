@@ -18,7 +18,8 @@ body {
 .header {
   height: 100vh;
   position: relative;
-  background: #2a3b40 url("../img/hero.png") center/cover no-repeat;
+  background: #2a3b40 url("../img/webp/hero-6638b0faa029a.webp") center/cover
+    no-repeat;
 }
 
 .header .header-nav {
@@ -172,7 +173,8 @@ body {
 }
 
 .sec3 {
-  background: url("../img/foods-bg.png") center/cover no-repeat;
+  background: url("../img/webp/foods-bg-6638b0fbf2730.webp") center/cover
+    no-repeat;
   padding: 2rem;
   margin: 0;
 }
@@ -183,9 +185,9 @@ body {
   display: grid;
   margin: auto;
   max-width: 120rem;
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: (1fr) [4];
   grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[4];
+  -ms-grid-rows: (1fr) [4];
   grid-template-rows: repeat(4, 1fr);
   text-align: center;
 }
@@ -288,7 +290,8 @@ body {
 }
 
 .section5-wrapper {
-  background: url("../img/sec-5-bg.png") center/cover no-repeat;
+  background: url("../img/webp/sec-5-bg-6638b110194a9.webp") center/cover
+    no-repeat;
 }
 
 .section5-wrapper .section-5 {
